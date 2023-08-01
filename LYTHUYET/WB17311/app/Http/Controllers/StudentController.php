@@ -24,10 +24,10 @@ class StudentController extends Controller
         ->select('id', 'name', 'image')
         ->whereNull('deleted_at')
         ->get();
-        if($request->post() && $request->email){
+        if($request->post() && $request->name){
             $students = DB::table('students')
             ->select ('id', 'name', 'image')
-            ->where('name' , 'like', '%' . $request->email . '%')
+            ->where('name' , 'like', '%' . $request->name . '%')
             ->get();
 
         }

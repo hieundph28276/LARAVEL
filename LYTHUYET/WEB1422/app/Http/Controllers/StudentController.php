@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Requests;
 use Illuminate\Support\Facades\DB;  
 use App\Http\Requests\StudentRequest;
+use Illuminate\Http\Request;
+
 class StudentController extends Controller
 {
     public function index(Request $request){

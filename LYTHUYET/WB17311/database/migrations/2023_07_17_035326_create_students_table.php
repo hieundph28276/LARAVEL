@@ -21,7 +21,7 @@ return new class extends Migration
             $table->date('date_of_birth');
             $table->integer('status')->default(2);//khởi tạo giá trị mặc định là 1
             $table->string('image')->nullable();
-            $table->timestamps();
+            $table->timestamps(); 
             $table->softDeletes(); // add
         });
     }

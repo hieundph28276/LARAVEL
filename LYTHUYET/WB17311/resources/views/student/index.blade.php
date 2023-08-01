@@ -4,7 +4,7 @@
 <form action="{{url('/student')}}" method="POST">
     @csrf
     <label>
-        Email <input type="text" name="email">
+        Email <input type="text" name="name">
     </label>
 
     <input type="submit" name="btnSearch" value="Tìm Kiếm">
